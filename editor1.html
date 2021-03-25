@@ -1,0 +1,98 @@
+<!--- 
+@author  Writam Mallik, Ipshita Nandy
+@version 3.0
+@Date 15/03/2021
+--->
+
+<html>
+<title>
+  Salad Editor
+</title>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous"/>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo"><i class="fas fa-pepper-hot"></i>Valley Ensalada - Make Your Own Salad</a>
+            <div class="navbar__toggle">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links">Home</a>
+                </li>
+                <div class="dropdown">
+                    <button class="dropbtn">Menu</button>
+                    <div class="dropdown-content">
+                      <li><a class="dropdown-item" >Green Salad</a></li>
+                      <li><a class="dropdown-item" >Fruit Salad</a></li>
+                      <li><a class="dropdown-item" >Vegetable Salad</a></li>
+					  <li><a class="dropdown-item" >Non-Veg Salad</a></li>
+                    </div>
+                </div>
+                <li class="navbar__btn">
+                    <a href="viewer1.html" class="button">SEE, WHAT YOU MADE!</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+<div class ="palette">
+
+        <div class = "green">
+          <h3><span class="badge bg-info text-dark" id = "green1">Greens</span></h3>
+          <img src="img/cucumber.png" width='200' height = '150' class = "dragTarget" id = "gCucumber">
+          <img src="img/onion.png" width='200' height = '150' class="dragTarget"  id="gOnion" >
+          <img src="img/tomato.png" width='200' height = '150' class="dragTarget" id="gTomato">
+          <img src="img/carrot.png" width='200' height = '150' class="dragTarget" id="gCarrot">
+        </div>
+
+        <div class = "fruit" draggable="true">
+          <h3><span class="badge bg-info text-dark">Fruits</span></h1>
+          <img src="img/stawberry.png" width='200' height = '150' class="dragTarget" id="fStawberry">
+          <img src="img/apple.png" width='200' height = '150' class="dragTarget" id="fApple">
+          <img src="img/banana.png" width='200' height = '150' class="dragTarget" id="fBanana">
+          <img src="img/watermelon.png" width='200' height = '150' class="dragTarget" id="fWatermelon">
+        </div>
+
+        <div class = "vegetable">
+          <h3><span class="badge bg-info text-dark">Vegetables</span></h1>
+          <img draggable="true" src="img/potato.png" width='200' height = '150' class="dragTarget" id="vPotato">
+          <img src="img/cabbage.png" width='200' height = '150' class="dragTarget" id="vCabbage">
+          <img src="img/beet.png" width='200' height = '150' class="dragTarget" id="vBeet">
+          <img src="img/broccoli.png" width='200' height = '150' class="dragTarget" id="vBroccoli">
+        </div>
+
+        <div class = "nonveg">
+          <h3><span class="badge bg-info text-dark">Non-Veg</span></h1>
+          <img src="img/chicken.png" width='200' height = '150' class="dragTarget" id="nChicken">
+          <img src="img/lobster.png" width='200' height = '150' class="dragTarget" id="nLobster">
+          <img src="img/salmon.png" width='200' height = '150' class="dragTarget" id="nSalmon">
+          <img src="img/egg.png" width='200' height = '150' class="dragTarget" id="nEgg">
+        </div>
+
+        <img src="img/salad-maker.png" width="350" width="550" class="dropTarget" id="dropHere">
+
+        <div class="field">
+      <form name="f1">
+        <p class = "form" style="color:blue;"><b>Add a Design No: </b><input name="word" type="text">  
+        <input value="Go" type="button" class="Go"></p>
+        </form>     
+         
+      <button class="Save" type="button" onclick="FinalSaving()">Save</button> 
+      <button class="Submit" type="button" onclick="PerlSubmit()">Submit</button>
+  </div>
+</div>
+
+<script type="text/javascript" src="script_editor.js">
+</script>
+<footer class="bg-dark text-center text-white">
+</footer>
+  </body>

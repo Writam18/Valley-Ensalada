@@ -1,0 +1,206 @@
+<!--- 
+@author  Writam Mallik, Ipshita Nandy
+@version 3.0
+@Date 15/03/2021
+--->
+
+<!doctype html>
+<html>
+<head>
+    <title>Salad Viewer</title>
+	
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+	
+	<style>
+            body{
+                background-image: url("img/foodbcg8.jpg");
+				background-size: cover;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+                font-size: 14px;
+                line-height: 1.5;
+                color: black;
+            }
+
+            .heading_main {
+                text-align: center;
+                font-size: 60px;
+				color : #F7F43F;
+            }
+            
+            .board{
+                position: absolute;
+                width:90%;
+                height:50%;
+                margin:auto;
+                position: relative;
+                background-color: transparent;
+                border: 5px solid black;
+                border-style: dotted; 
+                height: 700px;
+                border-collapse: separate;
+                border-spacing: 15px 50px;
+            }
+
+            .drop {
+                position: absolute;
+                font-size: 40px;
+				color : #72EFF6;
+				font-family:verdana;
+				font-weight: 900;
+				margin-left: 2rem;
+            }
+
+            .final_image {
+                position: absolute;
+                margin-top: 30px;
+                margin-left: 38rem;
+                margin-bottom: 20rem;
+                border: 5px solid red;
+				height: 300px;
+				width: 300px;
+            }
+
+            .Go {
+                font-size: 1rem;
+                top: -62px;
+                left: 21rem;
+                background-image: linear-gradient(to top, #18eb05 100%, #e9e8a2 100%);
+                padding: 4px 8px;
+                border: none;
+                border-radius: 4px;
+                color: #fff;
+                margin-top: 1rem;
+                cursor: pointer;
+                position: relative;
+                transition: all 0.35s ease-in-out;
+                outline: none;
+                }
+
+            .Reset {
+                font-size: 1rem;
+                margin-left: 42px;
+                background-image: linear-gradient(to top, #0000FF 100%, #0000FF 100%);
+                padding: 4px 8px;
+                border: none;
+                border-radius: 4px;
+                color: #fff;
+                cursor: pointer;
+                position: relative;
+                transition: all 0.35s ease-in-out;
+                outline: none;
+                }
+
+            .navbar__btn {
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                text-decoration: none;
+                padding: 10px 20px;
+            }
+
+            .button {
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                text-decoration: none;
+                color: #fff;
+                margin-top: 15px;
+                background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+                padding: 14px 2px;
+                height: 80%;
+                width: 20%;
+                border: none;
+                outline: none;
+                border-radius: 4px;
+                cursor: pointer;
+                position: relative;
+                transition: all 0.35s;
+                margin-left: 60rem;
+            }
+
+
+            .button:after {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 100%;
+                color: #fff;
+                background: #4837ff;
+                transition: all 0.35s;
+                border-radius: 4px;
+            }
+
+            .button:hover {
+                color: #fff;
+            }
+
+            .button:hover:after {
+                display: flex;
+                content: 'GO BACK TO KITCHEN!';
+                align-items:center;
+                justify-content: center;
+                color: #fff;  
+                width: 100%;
+            }
+
+            .button_END {
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                text-decoration: none;
+                color: #fff;
+                background-image: linear-gradient(to top, #df5c1f 100%, #df5c1f 100%);
+                padding: 14px 32px;
+                top: -15px;
+                height: 80%;
+                width: 100%;
+                border: none;
+                outline: none;
+                border-radius: 4px;
+                margin-top: 2rem;
+                cursor: pointer;
+                position: relative;
+            }
+
+            .button_END:hover {
+                background: #f50404;
+                transition: all 0.35s ease;
+            }
+
+            .dno {
+                margin-top: -45px;
+                margin-left: 30px;
+				font-size: 30px;
+				color:#7CFF35;
+            }
+
+    </style>
+	
+	
+
+<body>
+    <li class="navbar__btn">
+        <a href="editor1.html" class="button">GO BACK TO KITCHEN!</a>
+    </li>
+    <form name="f1">
+        <p class="dno" style="font-size: 20px">Enter Design no: <input name="Design" id="p" method="GET" type="text">  
+        <input value="Reset" type="button" onclick="window.location.reload()" class="Reset"></p>
+        <input value="Go" type="button" onclick="getResult()" class="Go"></p>
+        <div id="result"></div>
+    </form>
+
+    <div class="board">
+        <h2 class ="heading_main" >Here is your Salad! Bon Appetit!!</h2>
+        <p class="dno"> Here are your ingredients :</p>
+		<div id="foo" class="drop">
+        <img src = "img/nothing.png"  style="display:none;" id="x" class="final_image"/>
+        </div>
+    </div>
+    
+
+<script type="text/javascript" src="script_view.js"></script>
+</body>
+</html>

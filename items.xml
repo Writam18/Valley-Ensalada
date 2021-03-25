@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.0.4
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Mar 15, 2021 at 01:27 PM
+- Server version: 10.4.17-MariaDB
+- PHP Version: 7.3.27
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="mysalad" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="items">
+                CREATE TABLE `items` (
+                  `ID` varchar(20) NOT NULL,
+                  `itemlist` text NOT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'mysalad'
+    -->
+    <database name="mysalad">
+        <!-- Table items -->
+        <table name="items">
+            <column name="ID">1</column>
+            <column name="itemlist">  &lt;salad&gt;
+    &lt;design&gt;1&lt;/design&gt;
+    &lt;itemlist&gt;gcucumber&lt;/itemlist&gt;
+    &lt;itemlist&gt;gonion&lt;/itemlist&gt;
+    &lt;itemlist&gt;gtomato&lt;/itemlist&gt;
+    &lt;itemlist&gt;gcarrot&lt;/itemlist&gt;
+  &lt;/salad&gt;
+</column>
+        </table>
+        <table name="items">
+            <column name="ID">2</column>
+            <column name="itemlist">  &lt;salad&gt;
+    &lt;design&gt;2&lt;/design&gt;
+    &lt;itemlist&gt;fstawberry&lt;/itemlist&gt;
+    &lt;itemlist&gt;fapple&lt;/itemlist&gt;
+    &lt;itemlist&gt;fbanana&lt;/itemlist&gt;
+    &lt;itemlist&gt;fwatermelon&lt;/itemlist&gt;
+  &lt;/salad&gt;
+</column>
+        </table>
+        <table name="items">
+            <column name="ID">3</column>
+            <column name="itemlist">  &lt;salad&gt;
+    &lt;design&gt;3&lt;/design&gt;
+    &lt;itemlist&gt;vpotato&lt;/itemlist&gt;
+    &lt;itemlist&gt;vcabbage&lt;/itemlist&gt;
+    &lt;itemlist&gt;vbeet&lt;/itemlist&gt;
+    &lt;itemlist&gt;vbroccoli&lt;/itemlist&gt;
+  &lt;/salad&gt;
+</column>
+        </table>
+        <table name="items">
+            <column name="ID">4</column>
+            <column name="itemlist">  &lt;salad&gt;
+    &lt;design&gt;4&lt;/design&gt;
+    &lt;itemlist&gt;nchicken&lt;/itemlist&gt;
+    &lt;itemlist&gt;nlobster&lt;/itemlist&gt;
+    &lt;itemlist&gt;nsalmon&lt;/itemlist&gt;
+    &lt;itemlist&gt;negg&lt;/itemlist&gt;
+  &lt;/salad&gt;
+</column>
+        </table>
+        <table name="items">
+            <column name="ID">5</column>
+            <column name="itemlist">  &lt;salad&gt;
+    &lt;design&gt;5&lt;/design&gt;
+    &lt;itemlist&gt;vpotato&lt;/itemlist&gt;
+    &lt;itemlist&gt;fapple&lt;/itemlist&gt;
+    &lt;itemlist&gt;gonion&lt;/itemlist&gt;
+    &lt;itemlist&gt;nlobster&lt;/itemlist&gt;
+  &lt;/salad&gt;
+</column>
+        </table>
+        <table name="items">
+            <column name="ID">6</column>
+            <column name="itemlist">  &lt;salad&gt;
+    &lt;design&gt;6&lt;/design&gt;
+    &lt;itemlist&gt;gtomato&lt;/itemlist&gt;
+    &lt;itemlist&gt;fbanana&lt;/itemlist&gt;
+    &lt;itemlist&gt;vbeet&lt;/itemlist&gt;
+    &lt;itemlist&gt;negg&lt;/itemlist&gt;
+  &lt;/salad&gt;
+</column>
+        </table>
+    </database>
+</pma_xml_export>

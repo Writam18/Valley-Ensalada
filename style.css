@@ -1,0 +1,313 @@
+@charset "UTF-8";
+/*
+@author  Writam Mallik, Ipshita Nandy
+@version 3.0
+@Date 15/03/2021
+ */    
+ 
+            body{
+                background-image: url('img/foodbcg1.jpg');
+                background-repeat: no-repeat;
+                background-color: transparent;
+                background-size: 1366px 1024px;
+				height: 100%;
+				width: 100%;			     
+	            background-size: cover;
+			}
+
+            .navbar {
+                background: purple;
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.2rem;
+                position: sticky;
+                top: 0;
+                z-index: 999;
+            }
+
+            .navbar__container {
+                text-align: left;
+                display: flex;
+                justify-content: space-between;
+                height: 80px;
+                z-index: 1;
+                width: 100%;
+                max-width: 1300px;
+                margin: 0 auto;
+                padding: 0 50px;
+            }
+
+            #navbar__logo {
+                background-color: #purple;
+                background-image: linear-gradient(to top, #ff0844 0%, #f3c323 100%);
+                background-size: 100%;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -moz-text-fill-color: transparent;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                text-decoration: none;
+                font-size: 2rem;
+            }
+
+            .navbar__menu {
+                display: flex;
+                align-items: center;
+                list-style: none;
+                text-align: center;
+            }
+
+            .navbar__item {
+                height: 80px;
+            }
+
+            .navbar__links {
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                padding: 0 1rem;
+                height: 100%;
+            }
+
+			.navbar__btn {
+			    display: flex;
+			    justify-content: center;
+			    align-items:center;
+			    text-decoration: none;
+			    padding: 10px 20px;
+			    height: 100%;
+			    width: 100%;
+			}
+
+            .button {
+			    display: flex;
+			    justify-content: center;
+			    align-items:center;
+			    text-decoration: none;
+			    color: #fff;
+			    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+			    padding: 14px 32px;
+			    top: -15px;
+			    height: 80%;
+			    width: 100%;
+			    border: none;
+			    outline: none;
+			    border-radius: 4px;
+			    margin-top: 2rem;
+			    cursor: pointer;
+			    position: relative;
+			    transition: all 0.35s;
+			}
+
+
+			.button:after {
+			    position: absolute;
+			    content: '';
+			    top: 0;
+			    left: 0;
+			    width: 0;
+			    height: 100%;
+			    color: #fff;
+			    background: #4837ff;
+			    transition: all 0.35s;
+			    border-radius: 4px;
+			}
+
+			.button:hover {
+			    color: #fff;
+			}
+
+			.button:hover:after {
+			    display: flex;
+			    content: 'SEE, WHAT YOU MADE!';
+			    align-items:center;
+			    justify-content: center;
+			    color: #fff;  
+			    width: 100%;
+			}
+
+			.button_END {
+			    display: flex;
+			    justify-content: center;
+			    align-items:center;
+			    text-decoration: none;
+			    color: #fff;
+			    background-image: linear-gradient(to top, #800080 100%, #800080 100%);
+			    padding: 14px 32px;
+			    top: -15px;
+			    height: 80%;
+			    width: 100%;
+			    border: none;
+			    outline: none;
+			    border-radius: 4px;
+			    margin-top: 2rem;
+			    cursor: pointer;
+			    position: relative;
+			}
+
+			.button_END:hover {
+			    background: #f50404;
+			    transition: all 0.35s ease;
+			}
+
+			.navbar__links:hover {
+			    color: #f77062;
+			    transition: all 0.3s;
+			}
+
+            .dropbtn {
+                      background-color: purple;
+                      color: white;
+                      padding: 16px;
+                      font-size: 16px;
+                      border: none;
+                    }
+
+            .dropdown {
+                      position: relative;
+                      display: inline-block;
+                    }
+
+            .dropdown-content {
+                      display: none;
+                      position: absolute;
+                      background-color: #f1f1f1;
+                      min-width: 160px;
+                      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                      z-index: 1;
+                    }
+
+            .dropdown-content a {
+                      color: black;
+                      padding: 12px 16px;
+                      text-decoration: none;
+                      display: block;
+                    }
+
+            .dropdown-content a:hover {background-color: #ddd;}
+
+            .dropdown:hover .dropdown-content {display: block;}
+
+            .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+            .form {
+                font-size: 1rem;
+                top: -49rem;
+                margin-left: -6px;
+                border: none;
+                border-radius: 4px;
+                color: #fff;
+                cursor: pointer;
+                position: relative;
+                transition: all 0.35s ease-in-out;
+                outline: none;
+                overflow: hidden;
+
+            }
+
+            .dragTarget {
+                  position:relative;
+                  height: 150px;
+                  cursor:move;
+                  transition: opacity .3s ease, transform .6s ease;
+            }
+
+            .dropTarget {
+                margin-top: -40rem;
+                margin-left: 58rem;
+                border: 5px solid purple;
+                border-style: dotted;
+            }
+
+            .field {
+            	top: -60rem;
+                margin-left: 58rem;
+            }
+
+            .dropTarget:hover {
+              animation: shake 0.5s;
+              animation-iteration-count: infinite;
+                }
+
+            @keyframes shake {
+              0% { transform: translate(1px, 1px) rotate(0deg); }
+              10% { transform: translate(-1px, -2px) rotate(-1deg); }
+              20% { transform: translate(-3px, 0px) rotate(1deg); }
+              30% { transform: translate(3px, 2px) rotate(0deg); }
+              40% { transform: translate(1px, -1px) rotate(1deg); }
+              50% { transform: translate(-1px, 2px) rotate(-1deg); }
+              60% { transform: translate(-3px, 1px) rotate(0deg); }
+              70% { transform: translate(3px, 1px) rotate(-1deg); }
+              80% { transform: translate(-1px, -1px) rotate(1deg); }
+              90% { transform: translate(1px, 2px) rotate(0deg); }
+              100% { transform: translate(1px, -2px) rotate(-1deg); }
+            }
+
+            .Save {
+                top: -50rem; 
+                font-size: 1rem;
+                background-image: linear-gradient(to top, #f17420 0%, #ee4f10 100%);
+                padding: 8px 12px;
+                border: none;
+                border-radius: 4px;
+                color: #fff;
+                cursor: pointer;
+                position: relative;
+                transition: all 0.35s ease-in-out;
+                outline: none;
+                margin-left: 10rem;
+            }
+
+            .Save:hover {background-color: #f17420}
+
+            .Save:active {
+              background-color: #f17420;
+              box-shadow: 0 5px #666;
+              transform: translateY(4px);
+            }
+
+            .Submit {
+                top: -50rem; 
+                font-size: 1rem;
+                background-image: linear-gradient(to top, #2d40e9 0%, #104bee 100%);
+                padding: 8px 12px;
+                border: none;
+                border-radius: 4px;
+                color: #fff;
+                cursor: pointer;
+                position: relative;
+                transition: all 0.35s ease-in-out;
+                outline: none;
+            }
+
+            .Submit:hover {background-color: #2d40e9}
+
+            .Submit:active {
+              background-color: #2d40e9;
+              box-shadow: 0 5px #666;
+              transform: translateY(5px);
+            }
+
+            .Go {
+                    font-size: -1rem;
+                    background-image: linear-gradient(to top, #18eb05 100%, #e9e8a2 100%);
+                    padding: 4px 8px;
+                    border: none;
+                    border-radius: 4px;
+                    color: #fff;
+                    margin-top: 1rem;
+                    cursor: pointer;
+                    position: relative;
+                    transition: all 0.35s ease-in-out;
+                    outline: none;
+                    }
+
+    			
+
+
